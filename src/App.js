@@ -1,11 +1,14 @@
-import BtntoNaver from "./components/BtntoNaver";
-import ImgComponent from "./components/Imgcomponent";
-
+import Practice from "./components/Practice";
+import ConditionalRender from "./components/ConditionalRender";
+import { useState } from "react";
+import PracticeOne from "./components/PracticeOne";
+import PracticeTwo from "./components/PracticeTwo";
+import TestRef from "./components/TestRef";
+import ChangeFocus from "./components/ChangeFocus";
 function App() {
   return (
     <div className="App">
-      <ImgComponent></ImgComponent>
-      <BtntoNaver></BtntoNaver>
+      <ChangeFocus></ChangeFocus>
     </div>
   );
 }
