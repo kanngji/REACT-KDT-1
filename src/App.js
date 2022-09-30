@@ -1,14 +1,17 @@
-import Practice from "./components/Practice";
-import ConditionalRender from "./components/ConditionalRender";
+import ReactFragment from "./components/ReactFragment";
+// import "./App.css";
 import { useState } from "react";
-import PracticeOne from "./components/PracticeOne";
-import PracticeTwo from "./components/PracticeTwo";
-import TestRef from "./components/TestRef";
-import ChangeFocus from "./components/ChangeFocus";
+
+import Comparing from "./components/Comparing";
+import TestUseEffect from "./components/TestUseEffect";
+import PracticeTimer from "./components/PracticeTimer";
+import TestUseMemo from "./components/TestUseMemo";
+import UsingUseMemo from "./components/UsingUseMemo";
 function App() {
+  //   const [show, setShow] = useState(false);
   return (
     <div className="App">
-      <ChangeFocus></ChangeFocus>
+      <UsingUseMemo></UsingUseMemo>
     </div>
   );
 }
