@@ -1,17 +1,15 @@
-import ReactFragment from "./components/ReactFragment";
-// import "./App.css";
-import { useState } from "react";
+import React, { useState } from "react";
+import SPracticeTimer from "./1001/SPracticeTimer";
 
-import Comparing from "./components/Comparing";
-import TestUseEffect from "./components/TestUseEffect";
-import PracticeTimer from "./components/PracticeTimer";
-import TestUseMemo from "./components/TestUseMemo";
-import UsingUseMemo from "./components/UsingUseMemo";
 function App() {
-  //   const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
+  const onChange = () => {
+    setShow(!show);
+  };
   return (
     <div className="App">
-      <UsingUseMemo></UsingUseMemo>
+      {show && <SPracticeTimer></SPracticeTimer>}
+      <button onClick={onChange}>보이기</button>
     </div>
   );
 }
